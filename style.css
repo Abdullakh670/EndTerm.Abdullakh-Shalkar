@@ -166,3 +166,17 @@ main, .content-wrapper {
     display: block;
     margin: 0 auto;
 }
+
+/* History бөліміндегі барлық суреттерді біркелкі 16:9 өлшеміне келтіру */
+.era-photo {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 16 / 9 !important; /* Барлығы бірдей кино форматта болады */
+    height: auto !important;
+    max-height: 420px !important;
+    object-fit: cover !important;    /* Сурет созылмайды, артығын шетінен әдемі қияды */
+    object-position: center top !important; /* Басты/адамдарды орталап көрсетеді */
+    display: block !important;
+    border-radius: 8px !important;
+    margin-bottom: 1rem !important;
+}
